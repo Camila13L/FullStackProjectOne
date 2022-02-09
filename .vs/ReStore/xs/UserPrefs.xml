@@ -3,9 +3,9 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ReStore" expanded="True">
+          <Node name="ReStore" expanded="True" selected="True">
             <Node name="API" expanded="True">
-              <Node name="Entities" selected="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
