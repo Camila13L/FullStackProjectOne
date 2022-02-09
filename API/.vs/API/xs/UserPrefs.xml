@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{F686031E-2E68-46AB-AE35-527DE47881CF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ProductsController.cs">
+    <Files>
+      <File FileName="Controllers/ProductsController.cs" Line="26" Column="57" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="API" expanded="True" selected="True">
+            <Node name="API" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
