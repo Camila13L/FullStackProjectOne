@@ -23,6 +23,7 @@
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Data\" />
+    <None Remove="..\client\src\products.tsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
