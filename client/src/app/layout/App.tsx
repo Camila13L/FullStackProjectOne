@@ -1,41 +1,34 @@
 
 
 import { useEffect, useState } from "react";
-import { Product } from "../models/products";
+import { Product } from "../models/product";
+import  Header  from "../layout/Header";
+import  Catalog  from "../../features/catalog/Catalog";
+import { Container, createTheme, CssBaseline, ThemeProvider, Typography } from "@mui/material";
+import { dark } from "@mui/material/styles/createPalette";
 
 function App() {
-    const [products, setProducts] = useState < Product[]>([]);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/api/Products')
-            .then(response => response.json())
-            .then(data => setProducts(data))
-    }, [])
-
-    function addProduct()
-    {
-        setProducts(prevState => [...prevState,
-            {
-                id: prevState.length + 101,
-                name: 'product' + (prevState.length + 1),
-                price: (prevState.length * 100) + 100,
-                brand: 'some brand',
-                description: 'some description',
-                pictureUrl:'http://picsum.com'
-            }])
+    const [darkMode, setDarkMode] = useState(false);
+    const paletteType = darkMode ? 'dark' : 'light'
+    const theme = createTheme({
+        palette: {
+            mode: paletteType,
+            background: {
+                default: paletteType === 'light' ? '#eaeaea' : '#121212'
+            }
+        }
+    })
+    function handleThemeChange() {
+        setDarkMode(!darkMode);
     }
-
-
     return (
-        <div>
-            <h1>Re-Store</h1>
-            <ul>
-                {products.map(Product => (
-                    <li key={Product.id}> {Product.name} - {Product.price}</li>
-                    ))}
-            </ul>
-            <button onClick={addProduct}> Add Product </button>
-        </div>
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Header darkMode={darkMode} handleThemeChange={handleThemeChange }/>
+        <Container>
+            <Catalog/>
+        </Container>
+        </ThemeProvider>
   );
 }
 
