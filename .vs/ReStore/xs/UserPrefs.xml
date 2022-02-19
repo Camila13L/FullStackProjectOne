@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{D049C5DB-ADCE-4920-B8F7-0A18FE2145EB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="API/API.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="client/src/features/catalog/Catalog.tsx">
     <Files>
-      <File FileName="client/src/app/layout/App.tsx" Line="33" Column="29" IsPinned="True" />
-      <File FileName="client/src/app/layout/Header.tsx" Line="14" Column="40" />
-      <File FileName="API/API.csproj" Line="1" Column="1" />
+      <File FileName="client/src/app/layout/App.tsx" Line="23" Column="7" IsPinned="True" />
+      <File FileName="client/src/features/catalog/ProductCard.tsx" Line="36" Column="26" />
+      <File FileName="client/src/features/catalog/ProductDetails.tsx" Line="6" Column="1" />
+      <File FileName="client/src/features/catalog/Catalog.tsx" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Option id="ShowAllFiles" value="True" />
           <Node name="ReStore" expanded="True">
-            <Node name="API" expanded="True">
-              <Node name="API.csproj" selected="True" />
+            <Node name="client" expanded="True">
+              <Node name="src" expanded="True">
+                <Node name="app" expanded="True" />
+                <Node name="features" expanded="True">
+                  <Node name="catalog" expanded="True">
+                    <Node name="Catalog.tsx" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
