@@ -24,6 +24,7 @@
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Data\" />
     <None Remove="..\client\src\products.tsx" />
+    <None Remove="Microsoft.TypeScript.MSBuild" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
